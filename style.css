@@ -1,0 +1,93 @@
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.form-input {
+  display: block;
+  margin: 10px auto;
+  width: 400px;
+}
+
+.ticket-container {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.ticket-header-container {
+  width: 100%;
+  height: auto;
+}
+
+.ticket-header-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.ticket-content {
+  padding: 10px;
+}
+
+.game-title-container {
+}
+
+.game-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.date-location-container {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.section-row-container {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.section {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.qr-code-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-code-container img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.qr-code-number {
+  font-size: 14px;
+  margin: 40px auto;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+.print-tickets-not-accepted {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.terms-link {
+  display: flex;
+  justify-content: center;
+}
+
+.terms {
+  color: black;
+  font-weight: 500;
+}

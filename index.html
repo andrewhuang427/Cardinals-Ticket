@@ -33,12 +33,8 @@
         type="text"
         placeholder="Section 143D"
       />
-      <input
-        id="row-and-seat-input"
-        class="form-input"
-        type="text"
-        placeholder="Row  11|  Seat  19"
-      />
+      <input id="row-input" class="form-input" type="text" placeholder="11" />
+      <input id="seat-input" class="form-input" type="text" placeholder="19" />
     </form>
     <div class="ticket-container">
       <div class="ticket-header-container">
@@ -47,8 +43,8 @@
       <div class="ticket-content">
         <div class="game-title-container">
           <h3 class="game-title" id="game-title">
-            Philadelphia Phillies at St. Louis Cardinals Tickets (Lou Brock & Bob
-            Gibson Label Pin Set Giveaway)
+            Philadelphia Phillies at St. Louis Cardinals Tickets (Lou Brock &
+            Bob Gibson Label Pin Set Giveaway)
           </h3>
         </div>
         <div class="date-location-container">
@@ -57,7 +53,11 @@
         </div>
         <div class="section-row-container">
           <div id="section" class="section">Section 143D</div>
-          <div id="row-and-seat" class="row">Row 11| Seat 19</div>
+          <div class="row">
+            Row <span id="row" class="row-span">11</span>|
+            <span style="margin-left: 10px">Seat</span>
+            <span id="seat" class="seat-span">19</span>
+          </div>
         </div>
         <div class="qr-code-container">
           <img src="/Cardinals-Ticket/images/qr.png" />
@@ -74,5 +74,5 @@
       </div>
     </div>
   </body>
-  <script src="/Cardinals-Ticket//script.js"></script>
+  <script src="/Cardinals-Ticket/script.js"></script>
 </html>

@@ -27,12 +27,23 @@ function handleSectionChange(event) {
   const newSection = event.target.value;
   section.innerHTML = newSection;
 }
-const rowAndSeatInput = document.getElementById("row-and-seat-input");
-const rowAndSeat = document.getElementById("row-and-seat");
 
-rowAndSeatInput.addEventListener("change", handleRowAndSeatChange);
+const rowInput = document.getElementById("row-input");
+const row = document.getElementById("row");
 
-function handleRowAndSeatChange(event) {
-  const newRowAndSeat = event.target.value;
-  rowAndSeat.innerHTML = newRowAndSeat;
+rowInput.addEventListener("change", handleRowChange);
+
+function handleRowChange(event) {
+  const newRow = event.target.value;
+  row.innerHTML = newRow;
+}
+
+const seatInput = document.getElementById("seat-input");
+const seat = document.getElementById("seat");
+
+seatInput.addEventListener("change", handleSeatChange);
+
+function handleSeatChange(event) {
+  const newSeat = event.target.value;
+  seat.innerHTML = newSeat;
 }

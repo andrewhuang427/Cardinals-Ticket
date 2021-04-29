@@ -35,15 +35,13 @@ body {
   padding: 10px;
 }
 
-.game-title-container {
-}
-
 .game-title {
   font-weight: 500;
   font-size: 20px;
 }
 
 .date-location-container {
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -56,6 +54,15 @@ body {
 .section {
   font-size: 18px;
   font-weight: 500;
+}
+
+.row-span {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.seat-span {
+  margin-left: 15px;
 }
 
 .qr-code-container {

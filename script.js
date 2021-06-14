@@ -27,7 +27,7 @@ function handleDateChange(event) {
 const stadiumInput = document.getElementById("stadium-input");
 const stadium = document.getElementById("location");
 
-stadiumInput.addEventListener("change");
+stadiumInput.addEventListener("change", handleStadiumChange);
 
 function handleStadiumChange(event) {
   const newStadium = event.target.value;

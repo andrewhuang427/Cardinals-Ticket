@@ -43,7 +43,7 @@ function handleTeamChange(event) {
   console.log("team changed");
   // set header image
   const teamObject = teams.filter((team) => team.name === event.target.value)[0];
-  headerImage.src = "/Cardinals-Ticket/ " + teamObject.image_url;
+  headerImage.src = "/Cardinals-Ticket" + teamObject.image_url;
   // set stadium name 
   stadium.innerHTML = teamObject.stadium;
 

@@ -1,3 +1,54 @@
+const teams =[
+  {
+    "name": "St. Louis Cardinals",
+    "stadium": "Bucsh Stadium",
+    "image_url": "/images/cardinals-header.png"
+  },
+
+  {  
+    "name": "New York Yankees",
+    "stadium": "Yankee Stadium",
+    "image_url": "/images/yankees-header.png"
+  },
+  {
+    "name": "New York Mets",
+    "stadium": "Citi Field",
+    "image_url": "/images/mets-header.png"
+  }
+]
+
+// * ---------- Team Select ---------- *
+
+const teamSelect = document.getElementById("team-select");
+const headerImage = document.getElementById("header-image");
+const stadium = document.getElementById("location");
+
+function generateTeamOptionsForSelect() {
+  console.log(teams);
+  let htmlString = "";
+  for (let i = 0 ; i < teams.length ; ++i) {
+    const team = teams[i];
+    const option = `<option value="${team.name}">${team.name}</option>`
+    htmlString += option;
+  }
+  teamSelect.innerHTML = htmlString;
+}
+
+generateTeamOptionsForSelect();
+
+teamSelect.addEventListener("change", handleTeamChange);
+
+function handleTeamChange(event) {
+  console.log(event.target.value);
+  console.log("team changed");
+  // set header image
+  const teamObject = teams.filter((team) => team.name === event.target.value)[0];
+  headerImage.src = "/Cardinals-Ticket/ " + teamObject.image_url;
+  // set stadium name 
+  stadium.innerHTML = teamObject.stadium;
+
+}
+
 // * ---------- Game Title ---------- *
 
 const gameTitleInput = document.getElementById("game-title-input");
@@ -24,15 +75,14 @@ function handleDateChange(event) {
 
 // * ---------- Stadium ---------- *
 
-const stadiumInput = document.getElementById("stadium-input");
-const stadium = document.getElementById("location");
+// const stadiumInput = document.getElementById("stadium-input");
 
-stadiumInput.addEventListener("change", handleStadiumChange);
+// stadiumInput.addEventListener("change", handleStadiumChange);
 
-function handleStadiumChange(event) {
-  const newStadium = event.target.value;
-  stadium.innerHTML = newStadium;
-}
+// function handleStadiumChange(event) {
+//   const newStadium = event.target.value;
+//   stadium.innerHTML = newStadium;
+// }
 
 // * ---------- Section ---------- *
 

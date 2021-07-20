@@ -1,21 +1,26 @@
-const teams =[
+const teams = [
   {
-    "name": "St. Louis Cardinals",
-    "stadium": "Bucsh Stadium",
-    "image_url": "/images/cardinals-header.png"
+    name: "St. Louis Cardinals",
+    stadium: "Bucsh Stadium",
+    image_url: "/images/cardinals-header.png",
   },
 
-  {  
-    "name": "New York Yankees",
-    "stadium": "Yankee Stadium",
-    "image_url": "/images/yankees-header.png"
+  {
+    name: "New York Yankees",
+    stadium: "Yankee Stadium",
+    image_url: "/images/yankees-header.png",
   },
   {
-    "name": "New York Mets",
-    "stadium": "Citi Field",
-    "image_url": "/images/mets-header.png"
-  }
-]
+    name: "New York Mets",
+    stadium: "Citi Field",
+    image_url: "/images/mets-header.png",
+  },
+  {
+    name: "Chicago White Sox",
+    stadium: "Guaranteed Rate Field",
+    image_url: "/images/whitesox-header.png",
+  },
+];
 
 // * ---------- Team Select ---------- *
 
@@ -26,9 +31,9 @@ const stadium = document.getElementById("location");
 function generateTeamOptionsForSelect() {
   console.log(teams);
   let htmlString = "";
-  for (let i = 0 ; i < teams.length ; ++i) {
+  for (let i = 0; i < teams.length; ++i) {
     const team = teams[i];
-    const option = `<option value="${team.name}">${team.name}</option>`
+    const option = `<option value="${team.name}">${team.name}</option>`;
     htmlString += option;
   }
   teamSelect.innerHTML = htmlString;
@@ -42,11 +47,12 @@ function handleTeamChange(event) {
   console.log(event.target.value);
   console.log("team changed");
   // set header image
-  const teamObject = teams.filter((team) => team.name === event.target.value)[0];
+  const teamObject = teams.filter(
+    (team) => team.name === event.target.value
+  )[0];
   headerImage.src = "/Cardinals-Ticket" + teamObject.image_url;
-  // set stadium name 
+  // set stadium name
   stadium.innerHTML = teamObject.stadium;
-
 }
 
 // * ---------- Game Title ---------- *

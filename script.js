@@ -20,6 +20,11 @@ const teams = [
     stadium: "Guaranteed Rate Field",
     image_url: "/images/whitesox-header.png",
   },
+  {
+    name: "Kansas City Royals",
+    stadium: "Kauffman Stadium",
+    image_url: "/images/royals-header.png",
+  },
 ];
 
 // * ---------- Team Select ---------- *

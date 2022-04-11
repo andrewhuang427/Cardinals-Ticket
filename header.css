@@ -1,0 +1,56 @@
+.container {
+  width: 350px;
+  height: 100px;
+  position: relative;
+}
+
+.mlb-logo-container {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+}
+
+.mlb-logo {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+.white-space {
+  height: 2px;
+}
+
+.team-color {
+  height: 70px;
+  width: 100%;
+  background-color: #fd5a1e;
+  position: relative;
+}
+
+.team-link {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  height: 95%;
+  width: auto;
+  object-fit: contain;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 100px;
+  width: 100px;
+  z-index: 9999;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

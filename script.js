@@ -25,6 +25,11 @@ const teams = [
     stadium: "Kauffman Stadium",
     image_url: "/images/royals-header.png",
   },
+  {
+    name: "San Francisco Giants",
+    stadium: "Oracle Park",
+    image_url: "/images/giants-header.png",
+  },
 ];
 
 // * ---------- Team Select ---------- *

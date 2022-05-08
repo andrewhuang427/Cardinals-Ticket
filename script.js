@@ -57,7 +57,7 @@ const teams = [
   },
   {
     name: "Milwaukee Brewers",
-    stadium: "",
+    stadium: "American Family Field",
     image_url: "/images/brewers-header.png",
   },
 ];

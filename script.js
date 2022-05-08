@@ -55,6 +55,11 @@ const teams = [
     stadium: "Truist Park",
     image_url: "/images/braves-header.png",
   },
+  {
+    name: "Milwaukee Brewers",
+    stadium: "",
+    image_url: "/images/brewers-header.png",
+  },
 ];
 
 // * ---------- Team Select ---------- *

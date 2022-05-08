@@ -35,6 +35,26 @@ const teams = [
     stadium: "Wrigley Field",
     image_url: "/images/cubs-header.png",
   },
+  {
+    name: "Los Angeles Angels",
+    stadium: "Angel Stadium",
+    image_url: "/images/angels-header.png",
+  },
+  {
+    name: "Arizona Diamondbacks",
+    stadium: "Chase Field",
+    image_url: "/images/diamondbacks-header.png",
+  },
+  {
+    name: "Seattle Mariners",
+    stadium: "T-Mobile Park",
+    image_url: "/images/mariners-header.png",
+  },
+  {
+    name: "Atlanta Braves",
+    stadium: "Truist Park",
+    image_url: "/images/braves-header.png",
+  },
 ];
 
 // * ---------- Team Select ---------- *

@@ -1,7 +1,7 @@
 const teams = [
   {
     name: "St. Louis Cardinals",
-    stadium: "Bucsh Stadium",
+    stadium: "Busch Stadium",
     image_url: "/images/cardinals-header.png",
   },
 
@@ -29,6 +29,11 @@ const teams = [
     name: "San Francisco Giants",
     stadium: "Oracle Park",
     image_url: "/images/giants-header.png",
+  },
+  {
+    name: "Chicago Cubs",
+    stadium: "Wrigley Field",
+    image_url: "/images/cubs-header.png",
   },
 ];
 
